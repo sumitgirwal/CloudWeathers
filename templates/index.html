@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Cloud Weathers {% endblock %}
+{% block content %}
+<h1 class="text-center text-primary">Welcome!</h1>
+<div class="row d-flex justify-content-center ">
+    <form class="w-50" hx-post="{% url 'get_weather' %}" hx-target="#showforcast">
+        {% csrf_token %}
+        <div class="my-5 d-flex justify-content-between align-items-center">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Enter your location..." name="search" >
+            <datalist id="datalistOptions">
+                {% for loc in locs %}
+                    <option value="{{loc.name}}">
+                {% endfor %}
+            </datalist>
+          <button type="submit" class="btn btn-success ms-2 px-5">Search</button>
+        </div>
+    </form>
+
+    <div id="showforcast" class="d-flex justify-content-center"></div>
+</div>
+{% endblock %}

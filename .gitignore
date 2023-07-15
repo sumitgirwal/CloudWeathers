@@ -1,0 +1,61 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches and logs
+*.log
+logs/
+*.sqlite3
+
+# Development media and static files
+/media/
+/static/
+
+# Environment-specific settings
+.env
+env.py
+
+# Django specific
+*.env
+*.pyc
+*.sqlite3
+*.pyo
+*.pyc
+*.pyc
+*.pyc
+
+# Secret key
+secret_key.py
+
+# Database configuration
+db.sqlite3
+
+# Static files collected by Django's 'collectstatic' management command
+collected_static/
+
+# Virtual environment
+venv/
+.env/
+
+# IDE files (modify according to your IDE/editor)
+.vscode/
+.idea/
+*.sublime-*
+
+# Compiled JavaScript (modify this if you use a different frontend build tool)
+node_modules/
+/dist/
+
+# User-uploaded media
+user_media/
+
+# Deployment-specific files (modify this according to your setup)
+deploy/
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore Thumbs.db files on Windows
+Thumbs.db
